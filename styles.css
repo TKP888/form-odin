@@ -11,3 +11,15 @@ button {
     color: white;
     background-color: green;
 }
+
+img {
+    width: 1000px;
+    height: auto;
+}
+
+form {
+    display: flex;
+    
+    width: 200px;
+    flex-wrap: wrap;
+}
