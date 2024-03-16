@@ -11,12 +11,23 @@
     <div>This is the section for text to explain what the form is about</div>
 
     <form action="" method="post">
-        <input type="text">First Name
-        <input type="text">Last Name
-        <input type="email">Email
-        <input type="tel">Phone Number
-        <input type="password">Password
-        <input type="password">Confirm Password
+      
+      <fieldset>
+            <legend>Lets do this</legend>
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name" required>
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name" required>
+            <label for="email">Email</label>
+            <input type="email" id="user_mail" name="user_mail" required>
+            <label for="number">Contact Number</label>
+            <input type="tel" id="phone_number" name="phone_number">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <label for="password">Confirm Password</label>
+            <input type="password" id="password" name="password"required>
+        </fieldset>
+
 
         <button type="submit">Create Account</button>
 
