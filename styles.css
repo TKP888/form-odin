@@ -42,6 +42,7 @@ color: white;
 }
 img {
    
+    
     max-width: 50%;
     max-height: auto;
     /* min-height: 50vh; */
@@ -58,7 +59,8 @@ fieldset{
     /* margin: 30px; */
     /* border: 2px solid black; */
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+   
     /* justify-content: space-between; */
 }
 form {
@@ -73,4 +75,18 @@ form {
 
   a{
     font-weight: bold;
+  }
+
+  .container_1 {
+   border: solid #2B6DBC 2px;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 50px 20px;
+  }
+
+  .container_2 {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
   }
