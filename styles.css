@@ -26,10 +26,15 @@ button {
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     color: white;
+    max-width: 250px;
+    height: 50px;
     background-color: green;
     margin: 30px;
 }
 
+.top{
+    padding: 100;
+}
 header{
       display: flex;
 justify-content: space-between;
@@ -44,7 +49,7 @@ img {
    
     
     max-width: 50%;
-    max-height: auto;
+    max-height: 100vh;
     /* min-height: 50vh; */
     /* display: flex; */
 }
@@ -57,18 +62,23 @@ fieldset{
     font-family: Roboto, sans-serif;
     font-size: 25px;
     /* margin: 30px; */
-    /* border: 2px solid black; */
+    border: 0px solid white;
     display: flex;
+    background-color: grey;
+   box-shadow: #2B6DBC;
     /* flex-direction: column; */
    
     /* justify-content: space-between; */
 }
 form {
     /* Center the form on the page */
+    display: flex;
+    flex-direction: column;
     margin: 0 auto;
     width: 100%;
     /* Form outline */
-    padding: 1em;
+    padding-top: 200px;
+    /* padding-left: 100px; */
     /* border: 1px solid #ccc;
     border-radius: 1em; */
   }
