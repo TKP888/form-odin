@@ -7,6 +7,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    background-color: lightgrey;
 }
 
 #main_body {
@@ -57,8 +58,9 @@ fieldset {
     border: 0;
     display: flex;
     flex-direction: column;
-    background-color: grey;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: whitesmoke;
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
+    
 }
 
 form {
@@ -81,12 +83,14 @@ a {
 }
 
 input {
+    min-width: 300px;
     max-width: 500px;
     min-height: 50px;
+    border-radius: 15px;
 }
 
 label {
-    padding: 25px 0;
+    padding: 15px 0 0 10px;
 }
 
 #subtitle {
@@ -95,4 +99,5 @@ label {
 
 #separate {
     display: flex;
+    justify-content: start;
 }
