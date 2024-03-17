@@ -20,13 +20,14 @@ body {
 
 
 button {
-    border-radius: 25px;
+    border-radius: 15px;
     border: 2px black;
-    padding: 10px;
-    font-family: 'Courier New', Courier, monospace;
+    padding: 10px 50px 10px 50px;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     color: white;
     background-color: green;
+    margin: 30px;
 }
 
 header{
@@ -41,18 +42,35 @@ color: white;
 }
 img {
    
-    max-width: 1000px;
-    height: auto;
+    max-width: 50%;
+    max-height: auto;
+    /* min-height: 50vh; */
     /* display: flex; */
 }
-
+fieldset{
+    min-height: 50vh;
+    max-height: 100vh;
+    width: auto;
+    margin: 0;
+    /* overflow: hidden; */
+    font-family: Roboto, sans-serif;
+    font-size: 25px;
+    /* margin: 30px; */
+    /* border: 2px solid black; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
 form {
     /* Center the form on the page */
     margin: 0 auto;
-    width: auto;
+    width: 100%;
     /* Form outline */
     padding: 1em;
-    border: 1px solid #ccc;
-    border-radius: 1em;
+    /* border: 1px solid #ccc;
+    border-radius: 1em; */
   }
-}
+
+  a{
+    font-weight: bold;
+  }
