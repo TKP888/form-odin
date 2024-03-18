@@ -7,35 +7,51 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div id="main_body">
-        <img src="./images/leaves.jpeg" alt="Leaves Image">
-        
-        <form action="" method="post">
-            <div id="top">This is the section for text to explain what the form is about</div>
-            <fieldset>
-                <div id="subtitle">Fill all information below:</div>
-                <div id="separate">
-                    <div class="container_1">
-                        <label for="first_name">First Name</label>
-                        <input type="text" id="first_name" name="first_name" required>
-                        <label for="email">Email</label>
-                        <input type="email" id="user_mail" name="user_mail" required>
-                        <label for="password">Password</label>
-                        <input type="password" id="password" name="password" required>
+<div id="main_container">
+    <div id="left"><img src="./images/leaves.jpeg" alt="Leaves Image"></div>
+    <div id="right">
+        <div id="top">This is the section for text to explain what the form is about</div>
+        <div>
+            <form action="" method="post">
+                
+                <fieldset>
+                    <div id="subtitle">Fill all information below:</div>
+                    <div id="separate">
+                        <div class="container_1">
+                            <label for="first_name">First Name</label>
+                            <input type="text" id="first_name" name="first_name" required>
+                            <label for="email">Email</label>
+                            <input type="email" id="user_mail" name="user_mail" required>
+                            <label for="password">Password</label>
+                            <input type="password" id="password" name="password" required>
+                        </div>
+                        <div class="container_2">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" id="last_name" name="last_name" required>
+                            <label for="number">Contact Number</label>
+                            <input type="tel" id="phone_number" name="phone_number">
+                            <label for="password_confirm">Confirm Password</label>
+                            <input type="password" id="password_confirm" name="password_confirm" required>
+                        </div>
                     </div>
-                    <div class="container_2">
-                        <label for="last_name">Last Name</label>
-                        <input type="text" id="last_name" name="last_name" required>
-                        <label for="number">Contact Number</label>
-                        <input type="tel" id="phone_number" name="phone_number">
-                        <label for="password_confirm">Confirm Password</label>
-                        <input type="password" id="password_confirm" name="password_confirm" required>
-                    </div>
-                </div>
-            </fieldset>
-            <button type="submit">Create Account</button>
+                </fieldset>
+
+        </div>
+        <div id="confirm"><button type="submit">Create Account</button>
             <p>Already have an account? <a href="./index.html">Log in</a></p>
-        </form>
+        </form></div>
+
+    </div>
+</div>
+
+
+
+
+
+
+        
+       
+            
     </div>
 </body>
 </html>
