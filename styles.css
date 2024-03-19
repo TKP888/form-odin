@@ -1,9 +1,9 @@
 body {
-    height: 100vh;
-    width: 100%;
+    height: auto;
+    width: auto;
     margin: 0;
     font-family: Roboto, sans-serif;
-    font-size: 25px;
+    font-size: 18px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -11,8 +11,11 @@ body {
 }
 
 #main_container{
-    border: solid 5px blue;
+  
     display: flex;
+    flex-direction: row;
+   
+    height: 100vh;
 }
 
 /* #main_body {
@@ -21,9 +24,15 @@ body {
     justify-content: space-between;
 } */
 
+#left{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
 #right{
     display: flex;
     flex-direction: column;
+    align-items: stretch;
 
 }
 
@@ -41,15 +50,15 @@ button {
 }
 
 #top{
-    padding: 100px;
-    text-align: left;
-    border: 1px solid red;
+    padding: 100px 0 100px 50px;
+    /* text-align: left; */
+    
 }
 
 #confirm {
-    padding: 50px 0 0 100px;
+    padding: 25px 0 0 50px;
     text-align: left;
-    border: 1px solid red;
+    
 }
 
 img {
@@ -60,9 +69,9 @@ img {
 }
 
 fieldset {
-    min-height: 50vh;
+    /* min-height: 15vh; */
     /* max-height: 100vh; */
-    width: 50vw;
+    /* width: 50vw; */
 
     
     font-family: Roboto, sans-serif;
@@ -80,9 +89,9 @@ fieldset {
 form {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    width: 100%;
-    padding-top: 200px;
+   
+    /* width: 100%; */
+
     
 }
 
@@ -91,23 +100,33 @@ a {
 }
 
 .container_1,
-.container_2 {
-    margin: 50px;
+.container_2,
+.container_3 {
+    padding: 50px 10px 50px 20px;
     display: flex;
     flex-direction: column;
-    border: 1px solid blue;
-   flex-grow: 3;
+  justify-content: flex-start;
+  flex-wrap: wrap ;
+ 
+   flex-grow: 2;
 }
 
 input {
-    min-width: 300px;
-    max-width: 500px;
-    min-height: 50px;
-    border-radius: 15px;
+    min-width: 100px;
+    max-width: 300px;
+    min-height: 30px;
+    border-radius: 10px;
+ 
+
 }
 
 label {
     padding: 15px 0 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    max-width: 150px;
+
 }
 
 #subtitle {
@@ -117,9 +136,15 @@ label {
 #separate {
     display: flex;
     flex-direction: row;
-    min-height: 50vh;
+    min-height: 30vh;
+    width: 60.28vw;
     align-items: center;
-    border: solid 2px blue;
+    text-align: left;
+   
     /* justify-content: flex-start; */
     /* align-items: center; */
+}
+
+p{
+    padding-left: 20px;
 }
