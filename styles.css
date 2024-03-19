@@ -43,11 +43,13 @@ button {
 #top{
     padding: 100px;
     text-align: left;
+    border: 1px solid red;
 }
 
 #confirm {
     padding: 50px 0 0 100px;
     text-align: left;
+    border: 1px solid red;
 }
 
 img {
@@ -60,17 +62,16 @@ img {
 fieldset {
     min-height: 50vh;
     /* max-height: 100vh; */
-    width: 100vw;
+    width: 50vw;
 
-    margin: 0;
+    
     font-family: Roboto, sans-serif;
     font-size: 25px;
-    border: 0;
+    /* border: 1px solid red; */
     display: flex;
+
     flex-direction: column;
-    /* align-items: stretch; */
-    flex-wrap: wrap;
-    /* justify-content: flex-start; */
+
     background-color: whitesmoke;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
     
@@ -82,6 +83,7 @@ form {
     margin: 0 auto;
     width: 100%;
     padding-top: 200px;
+    
 }
 
 a {
@@ -94,6 +96,7 @@ a {
     display: flex;
     flex-direction: column;
     border: 1px solid blue;
+   flex-grow: 3;
 }
 
 input {
@@ -113,6 +116,10 @@ label {
 
 #separate {
     display: flex;
-    /* justify-content: flex-start;
-    align-items: stretch; */
+    flex-direction: row;
+    min-height: 50vh;
+    align-items: center;
+    border: solid 2px blue;
+    /* justify-content: flex-start; */
+    /* align-items: center; */
 }
