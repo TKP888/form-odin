@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     height: 100vh;
     width: 100vw;
@@ -10,34 +11,26 @@ body {
     background-color: lightgrey;
 }
 
-#main_container{
-  
+/* Container Styles */
+#main_container {
     display: flex;
     flex-direction: row;
-   
     height: 100vh;
 }
 
-/* #main_body {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-} */
-
-#left{
+#left {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    /* min-width: 20vw; */
-    
 }
-#right{
+
+#right {
     display: flex;
     flex-direction: column;
     align-items: stretch;
-
 }
 
+/* Button Styles */
 button {
     border-radius: 15px;
     border: 2px solid black;
@@ -51,88 +44,77 @@ button {
     margin: 30px;
 }
 
-#top{
+/* Top Section Styles */
+#top {
     padding: 100px 0 100px 50px;
-    /* text-align: left; */
-    
 }
 
+/* Confirmation Section Styles */
 #confirm {
     padding: 25px 0 0 50px;
     text-align: left;
-    
 }
 
+/* Image Styles */
 img {
-    /* max-width: auto; */
-    max-height: 100vh;
- 
-    
-    /* min-height: 60vh;
-    min-width: 20px; */
+    /* max-height: 100vh; */
+    max-width: 35vw;
+
 }
 
+/* Form Fieldset Styles */
 fieldset {
-    /* min-height: 15vh; */
-    /* max-height: 100vh; */
-    /* width: 50vw; */
-
-    
     font-family: Roboto, sans-serif;
     font-size: 25px;
-    /* border: 1px solid red; */
     display: flex;
-
     flex-direction: column;
-border: none;
+    border: none;
     background-color: whitesmoke;
     box-shadow: 0 15px 20px rgba(0, 0, 0, 0.2);
-    
+    width: 67vw;
 }
 
+/* Form Styles */
 form {
     display: flex;
     flex-direction: column;
-   
-    /* width: 100%; */
-
-    
 }
 
+/* Link Styles */
 a {
     font-weight: bold;
 }
 
+/* Form Container Styles */
 .container_1,
 .container_2,
 .container_3 {
     padding: 50px 10px 50px 20px;
     display: flex;
     flex-direction: column;
-  justify-content: flex-start;
-  flex-wrap: wrap ;
- 
-   flex-grow: 2;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    flex-grow: 2;
 }
 
+/* Input Styles */
 input {
     min-width: 100px;
     max-width: 300px;
     min-height: 30px;
     border-radius: 10px;
- 
-
 }
 
+/* Label Styles */
 label {
     padding: 15px 0 0 10px;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: bold;
     max-width: 150px;
-
 }
 
+/* Additional Styles */
 #subtitle {
     padding: 20px 0 20px 50px;
 }
@@ -144,11 +126,8 @@ label {
     width: 60.28vw;
     align-items: center;
     text-align: left;
-   
-    /* justify-content: flex-start; */
-    /* align-items: center; */
 }
 
-p{
+p {
     padding-left: 20px;
 }
