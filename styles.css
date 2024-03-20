@@ -57,8 +57,8 @@ button {
 
 /* Image Styles */
 img {
-    /* max-height: 100vh; */
-    max-width: 35vw;
+    max-height: 100vh;
+width:auto
 
 }
 
@@ -142,6 +142,7 @@ input:valid{
     border-color: green;
 }
 
-/* input:focus {
-    border-color: blue;
-} */
+input:focus {
+
+    box-shadow: 0 0px 10px rgba(3, 134, 228, 0.818);
+}
