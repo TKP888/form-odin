@@ -103,6 +103,7 @@ input {
     max-width: 300px;
     min-height: 30px;
     border-radius: 10px;
+    border-color: black;
 }
 
 /* Label Styles */
@@ -131,3 +132,16 @@ label {
 p {
     padding-left: 20px;
 }
+
+input:invalid{
+    border-color: red;
+}
+
+input:valid{
+
+    border-color: green;
+}
+
+/* input:focus {
+    border-color: blue;
+} */
