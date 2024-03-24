@@ -8,9 +8,15 @@
 </head>
 <body>
     <div id="main_container">
-        <div id="left">
-            <img src="./images/leaves.jpeg" alt="Leaves Image">
+        <!-- <div > -->
+            <div id="left">
+                <div id="topleft">test</div>
+                <div id="midleft"><img id="icon" src="./images/odin.png" alt="odin icon"><div class="icontext">ODIN</div></div>
+            <!-- <img  src="./images/leaves.jpeg" alt="Leaves Image"> -->
+            <div id="botleft"> </div>
+        
         </div>
+        <!-- </div> -->
         <div id="right">
             <div id="top">This is the section for text to explain what the form is about</div>
             <div>
@@ -24,7 +30,7 @@
                                 <label for="email">Email</label>
                                 <input type="email" id="user_mail" name="user_mail" placeholder="e.g. michaelscott@gmail.com" required>
                                 <label for="password">Password</label>
-                                <input type="password" id="password" name="password" required>
+                                <input type="password" id="password" name="password" minlength="8" maxlength="24" required>
                             </div>
                             <div class="container_2">
                                 <label for="last_name">Last Name</label>
@@ -32,7 +38,7 @@
                                 <label for="number">Contact Number</label>
                                 <input type="tel" id="phone_number" name="phone_number" pattern="\d{11,11}" placeholder="Enter the 11 digit number" required>
                                 <label for="password_confirm">Confirm Password</label>
-                                <input type="password" id="password_confirm" name="password_confirm" required>
+                                <input type="password" id="password_confirm" name="password_confirm" minlength="8" maxlength="24" required>
                             </div>
                             <div class="container_3"></div>
                         </div>
