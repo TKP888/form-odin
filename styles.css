@@ -15,48 +15,42 @@ body {
 #main_container {
     display: flex;
     flex-direction: row;
-    /* justify-content: start; */
     min-height: 100vh;
-    /* min-width: 100vw; */
 }
 
-.icontext{
+.icontext {
     font-size: 50px;
     color: white;
     font-family: 'Courier New', Courier, monospace;
 }
 
-
 #left {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-   /* max-height: 100vh; */
     max-width: 37.45vw;
     min-width: 37.45vw;
     background-image: url(./images/leaves.jpeg);
-
 }
 
-#midleft{
+#midleft {
     display: flex;
     align-items: center;
     justify-content: center;
     height: 200px;
     background-color: rgba(0, 0, 0, 0.5);
-    }
-    
-    #icon{
-        min-width: 100px;
-        max-width: 100px;
-    }
+}
+
+#icon {
+    min-width: 100px;
+    max-width: 100px;
+}
 
 #right {
     display: flex;
     flex-direction: column;
     align-items: stretch;
     width: 62.55vw;
-    /* height: 100vh; */
 }
 
 /* Button Styles */
@@ -73,27 +67,25 @@ button {
     margin: 30px;
 }
 
-/* Top Section Styles */
+/* Section Styles */
+#top,
+#confirm {
+    padding: 25px 0 0 50px;
+}
+
 #top {
-    padding: 0 0 0 50px;
     min-height: 33vh;
 }
 
-/* Confirmation Section Styles */
 #confirm {
-    padding: 25px 0 0 50px;
     text-align: left;
     max-height: 33vh;
 }
 
 /* Image Styles */
 img {
- /* min-height: fit-content; */
-/* max-width: 33vw; */
-/* width: auto; */
-/* min-width: fit-content; */
-max-width: 37.45vw;
-min-width: 37.45vw;
+    max-width: 37.45vw;
+    min-width: 37.45vw;
 }
 
 /* Form Fieldset Styles */
@@ -132,6 +124,15 @@ a {
     flex-grow: 2;
 }
 
+#errorText {
+    font-size: 0.7rem;
+    color: red;
+}
+
+.error {
+    outline: 1px solid red;
+}
+
 /* Input Styles */
 input {
     min-width: 100px;
@@ -159,31 +160,23 @@ label {
     display: flex;
     flex-direction: row;
     min-height: 30vh;
-    /* width: 60.28vw; */
     max-width: 100vh;
     align-items: center;
     text-align: left;
-}
-
-#confirm {
-
-max-height: 33vh;
 }
 
 p {
     padding-left: 20px;
 }
 
-input:invalid{
+input:invalid {
     border-color: red;
 }
 
-input:valid{
-
+input:valid {
     border-color: green;
 }
 
 input:focus {
-
     box-shadow: 0 0px 10px rgba(3, 134, 228, 0.818);
 }

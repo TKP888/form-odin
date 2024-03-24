@@ -5,23 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Form</title>
     <link rel="stylesheet" href="./styles.css">
-    <script src="./script.js"></script>
+    
 </head>
 <body>
     <div id="main_container">
-        <!-- <div > -->
-            <div id="left">
-                <div id="topleft">test</div>
-                <div id="midleft"><img id="icon" src="./images/odin.png" alt="odin icon"><div class="icontext">ODIN</div></div>
-            <!-- <img  src="./images/leaves.jpeg" alt="Leaves Image"> -->
-            <div id="botleft"> </div>
-        
+        <div id="left">
+            <div id="topleft">test</div>
+            <div id="midleft">
+                <img id="icon" src="./images/odin.png" alt="odin icon">
+                <div class="icontext">ODIN</div>
+            </div>
+            <div id="botleft"></div>
         </div>
-        <!-- </div> -->
         <div id="right">
             <div id="top">This is the section for text to explain what the form is about</div>
             <div>
-                <form action="" method="post">
+                <form id="form" action="" method="post">
                     <fieldset>
                         <div id="subtitle">Fill all information below:</div>
                         <div id="separate">
@@ -32,6 +31,7 @@
                                 <input type="email" id="user_mail" name="user_mail" placeholder="e.g. michaelscott@gmail.com" required>
                                 <label for="password">Password</label>
                                 <input type="password" id="password" name="password" minlength="8" maxlength="24" required>
+                                <label id="errorText"></label>
                             </div>
                             <div class="container_2">
                                 <label for="last_name">Last Name</label>
@@ -40,17 +40,19 @@
                                 <input type="tel" id="phone_number" name="phone_number" pattern="\d{11,11}" placeholder="Enter the 11 digit number" required>
                                 <label for="password_confirm">Confirm Password</label>
                                 <input type="password" id="password_confirm" name="password_confirm" minlength="8" maxlength="24" required>
+                                <label id="errorText"></label>
                             </div>
                             <div class="container_3"></div>
                         </div>
                     </fieldset>
                     <div id="confirm">
-                        <button type="submit">Create Account</button>
+                        <button id="createbtn" type="submit">Create Account</button>
                         <p>Already have an account? <a href="./index.html">Log in</a></p>
                     </div>
                 </form>
             </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
