@@ -12,6 +12,10 @@ form.addEventListener("submit", function(event) {
     if (form.checkValidity()) {
         if (passOne === passTwo && passOne !== "") {
             errorLabel.innerHTML = "Thank you for signing up";
+            // Remove the event listener to allow form submission
+            form.removeEventListener("submit", this);
+            // Submit the form programmatically
+            form.submit();
         } else {
             errorLabel.innerHTML = "* Passwords do not match";
             passInputOne.classList.add("error");
